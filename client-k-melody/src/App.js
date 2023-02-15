@@ -1,19 +1,21 @@
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
+import routes from './config/routes';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Melody i love you
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        {routes.map((route, index) => (
+          <Route 
+            key={index} 
+            path={route.path} 
+            element={<route.layout><route.component></route.component></route.layout> } 
+          />)
+        )}
+      </Routes>
+   
+   </BrowserRouter>
   );
 }
 
