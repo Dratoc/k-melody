@@ -1,0 +1,11 @@
+@import '../../assets/styles/variables.scss';
+
+.content__button{
+    .button--sign-up{
+        border-radius: 40px;
+        width: 80px;
+        background-color: $white;
+        padding: 8px;
+        border-color: $smoke-blue-70;
+    }
+}

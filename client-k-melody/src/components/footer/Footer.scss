@@ -1,0 +1,38 @@
+@import '../../assets/styles/variables.scss';
+
+footer {
+    background-color: $petroleum-100;
+    color: $light-gray;
+    font-size: 14px;
+}
+  
+.content__footer{
+    width: 100%;
+}
+
+.footer-menu-bar--container{
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;  
+        width: 100%;
+        padding: 20px;
+      }
+      nav {
+      
+        width: 100%;
+        a {
+          color: $smoke-blue-30;
+          font-family: $nunito-Light;
+          text-decoration: none;
+          padding-bottom: 16px;
+          font-weight: $font-weight-400;
+          font-size: 16px;
+          line-height: 1.5;
+          &:hover {
+            color: $glowing-sky-100;
+          }
+        }
+      }
+}
+  

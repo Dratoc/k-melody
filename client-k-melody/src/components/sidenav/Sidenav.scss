@@ -1,0 +1,50 @@
+@import '../../assets/styles/variables.scss';
+
+.content{
+  &__buttons-sidenav{
+    display: flex;
+    gap: 8px;
+  }
+
+  &__sidenav{
+
+    header {
+      display: flex;
+      background-color: $white;
+      height: 56px;
+      width: 100%;
+      justify-content: space-around;
+      align-items: center;
+      box-shadow: $shadow;
+    }
+    
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;  
+      width: 100%;
+      padding: 20px;
+    }
+    nav {
+    
+      width: 100%;
+      a {
+        color: $smoke-blue-100;
+        font-family: $nunito-ExtraBold;
+        text-decoration: none;
+        padding-bottom: 16px;
+        font-weight: $font-weight-600;
+        font-size: 16px;
+        line-height: 1.5;
+        &:hover {
+          color: $smoke-blue-80;
+          background-image: $gradient-linear-menu;
+          background-size: 100% 4px;
+          background-repeat: no-repeat;
+          background-position-y: bottom;
+        }
+      }
+    }
+     
+  }
+}

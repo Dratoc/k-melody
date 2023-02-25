@@ -8,6 +8,7 @@ import LayoutBasic from "../layouts/LayoutBasic";
 import Home from "../pages/Home";
 import Contact from "../pages/Contact";
 import Error404 from "../pages/Error404";
+import Products from "../pages/products/Products";
 
 const routes=[
     {
@@ -24,6 +25,11 @@ const routes=[
         path: "/contact",
         layout: LayoutBasic,
         component: Contact
+    },
+    {
+        path: "/products",
+        layout: LayoutBasic,
+        component: Products
     },
     {
         path: "*",
